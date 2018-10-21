@@ -1,7 +1,7 @@
 <template>
   <div >
     <a class="content" target="_blank" v-for="indexContent in indexContentList":key="indexContent.id" >
-      <div class="title">{{indexContent.title}}</div>
+      <router-link :to="'/p/' + indexContent.id"><div class="title">{{indexContent.title}}</div></router-link>
       <img :src="indexContent.picture" class="picture">
 <div class="text">{{indexContent.text}}</div>
       <div class="writer">{{indexContent.writer}}</div>

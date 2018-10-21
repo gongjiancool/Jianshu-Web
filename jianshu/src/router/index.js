@@ -104,6 +104,24 @@ export default new Router({
           ]
         },
         {
+          //所有作者
+          path:'/writers',
+          component: resolve => require(['../components/common/Writers.vue'], resolve),
+          meta: {title: '所有作者'}
+        },
+        {
+          //作者详情
+          path:'/u/:id',
+          component: resolve => require(['../components/page/User.vue'], resolve),
+          meta: {title: '作者详情'}
+        },
+        {
+          //文章详情页
+          path:'/p/:id',
+          component: resolve => require(['../components/common/Article.vue'], resolve),
+          meta: {title: '文章详情页'}
+        },
+        {
           //专题详情
           path:'/c/:id',
           component: resolve => require(['../components/common/CollectionOne.vue'], resolve),

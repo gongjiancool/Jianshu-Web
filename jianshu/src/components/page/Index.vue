@@ -17,6 +17,7 @@
       <p class="rec">推荐作者</p>
       <p class="change">换一批</p>
       <v-recommend></v-recommend>
+      <router-link to="Writers"><button class="all">查看全部 > </button></router-link>
     </b-col>
   </b-row>
 </template>
@@ -69,5 +70,15 @@
   }
   .change{
     margin-top:-10%;margin-left:87%;color: grey;font-size:10pt
+  }
+
+  .all{
+    margin-top: 25px;
+    text-align: center;
+    width: 320px;
+    height: 35px;
+    background-color: #E8E8E8;
+    border: 1px solid lightgrey;
+    color:#696969;
   }
 </style>

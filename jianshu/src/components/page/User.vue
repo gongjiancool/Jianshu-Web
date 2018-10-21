@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-head></v-head>
+    <!--<v-head></v-head>-->
 
     <b-container class="bv-example-row">
       <b-row>
@@ -51,7 +51,7 @@
     export default {
         name: "User",
         components: {
-          vHead,
+          // vHead,
           vUserInfo,
           vArticle
    }
